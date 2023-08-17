@@ -1,0 +1,26 @@
+<!--    //Written by: Charles Strovel
+        //assignment 2
+        //ITEC 345-851
+        //This HTML is a lunar landar game -->
+<html>
+	<head>
+		<meta charset = "UTF-8">
+	</head>
+	<body style = "background: black"
+	onload = onLoadHandler()>
+		<!-- buttons along the top bar -->
+		<form id = "MY_FORM" action = "#" style = "height: 50px"> 
+			<button id = "RESTART" onClick = "restart()">Restart</button>
+			<button id = "START_BTN" onClick = "startT()">Start Game</button>
+			<button  id = "ORBIT_BTN" onClick = "setUpNewGame()">Orbit For A While</button>
+		</form>
+
+		<!-- canvas -->
+		<canvas id = "PLAY_AREA" width = "2000" height = "1000"></canvas>
+		
+		<!-- the script must be loaded down here as it had difficulty 
+		finding the canvas otherwise-->
+		<script src = "lander.js"></script>
+	</body>
+</html>
+
